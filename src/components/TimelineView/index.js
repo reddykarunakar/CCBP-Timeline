@@ -16,7 +16,7 @@ const TimelineView = props => {
   const {timelineItemsList} = props
 
   const renderTimelineCard = item => {
-    if (item.category === 'PROJECT') {
+    if (item.categoryId === 'PROJECT') {
       return <ProjectTimelineCard key={item.id} projectDetails={item} />
     }
     return <CourseTimelineCard key={item.id} courseDetails={item} />
